@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MiniBuscaminas-Android</string>
+    <string name="btnNuevo">NUEVO</string>
+    <string name="btnResolver">RESOLVER</string>
 </resources>

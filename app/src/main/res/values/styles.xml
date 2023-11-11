@@ -1,0 +1,28 @@
+<resources>
+    <style name="btnCampo">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/azul</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+    <style name="btnNuevo">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/verde</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="btnResolver">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:backgroundTint">@color/rojo</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+</resources>

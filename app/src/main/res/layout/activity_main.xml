@@ -2,8 +2,139 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:columnCount="5"
-    android:rowCount="5"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    android:layout_height="wrap_content"
+    android:columnCount="5"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    android:rowCount="7"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn00"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn01"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn02"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn03"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn04"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn10"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn11"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn12"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn13"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn14"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn20"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn21"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn22"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn23"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn24"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn30"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn31"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn32"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn33"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn34"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn40"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn41"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn42"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn43"
+        style="@style/btnCampo" />
+
+    <Button
+        android:id="@+id/btn44"
+        style="@style/btnCampo" />
+
+    <TextView
+        android:id="@+id/lblPuntos"
+        android:layout_width="331dp"
+        android:layout_height="125dp"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/morado"
+        android:gravity="center"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btnNuevo"
+        style="@style/btnNuevo"
+        android:layout_row="6"
+        android:layout_columnSpan="2"
+        android:text="@string/btnNuevo" />
+
+    <Button
+        android:id="@+id/btnResolver"
+        style="@style/btnResolver"
+        android:layout_column="3"
+        android:layout_columnSpan="2"
+        android:text="@string/btnResolver" />
+</GridLayout>
