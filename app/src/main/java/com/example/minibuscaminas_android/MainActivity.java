@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnResolver, btnNuevo;
     private Button[][] btns = new Button[5][5];
     private TextView lblPuntos;
-    private int puntos = 0;
-    int row1, col1, row2, col2, row3, col3, num = 0;
+    private int puntos = -2;
+    int row1, col1, row2, col2, row3, col3 = -1, num = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,16 +152,24 @@ public class MainActivity extends AppCompatActivity {
 
     public void accionResolver()
     {
-        btns[row1][col1].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.rojo)));
-        btns[row2][col2].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.rojo)));
-        btns[row3][col3].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.rojo)));
+        if(puntos != -2)
+        {
+            btns[row1][col1].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.rojo)));
+            btns[row2][col2].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.rojo)));
+            btns[row3][col3].setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.rojo)));
 
-        puntos = -1;
+            puntos = -1;
 
-        lblPuntos.setText("WASTED...");
+            lblPuntos.setText("WASTED...");
 
-        Log.i("Boton Resolver", "Juego resuelto");
-        Toast.makeText(this, "Juego resuelto", Toast.LENGTH_SHORT).show();
+            Log.i("Boton Resolver", "Juego resuelto");
+            Toast.makeText(this, "Juego resuelto", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Log.i("Boton Resolver", "Juego sin iniciar");
+            Toast.makeText(this, "Juegos sin iniciar", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void insertarMinas()
